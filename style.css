@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    /* box-sizing: border-box; */
 }
 
 @font-face {
@@ -11,6 +12,11 @@
 @font-face {
     font-family: "Gilroy-SemiBold";
     src: url("fonts/Gilroy-Semibold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Gilroy-Bold";
+    src: url("fonts/Gilroy-bold.woff") format("woff");
 }
 
 .center {
@@ -27,22 +33,116 @@
     font-weight: 400;
     line-height: normal;
     text-decoration: none;
-    padding: 7px 16px;
+    padding: 12px 16px;
 }
 
 .home__link {
     color: #F25822;
 }
 
-.header {
-    padding-top: 40px;
+.get__started__link {
+    margin-left: 14px;
+    border-radius: 30px;
+    background: #F25822;
+    color: #FFF;
+    font-family: Gilroy-SemiBold;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.logo {
     display: flex;
-    height: 40px;
-    justify-content: center;
     align-items: center;
-    gap: 346px;
+    gap: 14px;
+}
+
+.header {
+    display: flex;
+    padding-top: 40px;
+    height: 40px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .nav {
     display: flex;
+}
+
+.top__title {
+    color: #000;
+    font-family: Gilroy-Bold;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 17px;
+}
+
+.main__text {
+    color: #888;
+    font-family: Gilroy-Medium;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 85%;
+    padding-bottom: 37px;
+}
+
+.top__content {
+    display: flex;
+    padding-bottom: 103px;
+}
+
+.top__info__left {
+    padding-top: 143px;
+}
+
+.top__info__right {
+    padding-top: 83px;
+    padding-right: 64px;
+}
+
+.top__buttons {
+    display: flex;
+    height: 50px;
+    align-items: center;
+
+}
+
+.top__button__start {
+    border-radius: 50px;
+    background: #F25822;
+    box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.20);
+    text-decoration: none;
+    color: #FFF;
+    font-family: Gilroy-Bold;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 15px 35px;
+    margin-right: 27px;
+}
+
+.top__button__video {
+    color: #AAA;
+    font-family: Gilroy-Bold;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.play__button {
+    display: flex;
+    padding-right: 15px;
+}
+
+.top__logos {
+    display: flex;
+    justify-content: space-between;
 }
